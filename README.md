@@ -8,11 +8,11 @@ For the live demo, you can check their live demo [here](https://frappe.github.io
 
 ## Install
 
-> npm install frappe-gantt-react
+> npm install react-frappe-gantt
 
 or
 
-> yarn add frappe-gantt-react
+> yarn add react-frappe-gantt
 
 ## Usage
 
@@ -20,11 +20,11 @@ Import it to your project
 
 Using ES6 modules
 
-`import { FrappeGantt } from 'frappe-gantt-react`
+`import { FrappeGantt } from 'react-frappe-gantt`
 
 Or using CommonJS
 
-`const { FrappeGantt } = require('frappe-gantt-react')`
+`const { FrappeGantt } = require('react-frappe-gantt')`
 
 Then you can use it in your react app:
 
@@ -61,6 +61,7 @@ Then you can use it in your react app:
 |      Property      | Description                                                                                         |
 | :----------------: | :-------------------------------------------------------------------------------------------------- |
 |      `tasks`       | Accepts array of class `Task`                                                                       |
+|     `viewMode`     | Accepts one of `Quarter Day`, `Half Day`, `Day`, `Week`, `Month`                                    |
 |  `onTasksChange`   | Accepts a `(tasks: Task[]) => void`, where `tasks` is the new copy —manipulated— of array of tasks  |
 |     `onClick`      | Accepts a `(task: Task) => void`, where `task` is the clicked task                                  |
 |   `onDateChange`   | Accepts a `(task: Task, start: Moment, end: Moment) => void`, both start and end are Moment objects |
